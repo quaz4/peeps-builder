@@ -1,0 +1,16 @@
+{
+  "name": "peeps-builder",
+  "version": "1.0.0",
+  "description": "Package for building svgs based on Open Peeps by Pablo Stanley",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "node build/test/Test.js",
+    "start": "npm run build",
+    "build": "tsc"
+  },
+  "author": "William Stewart",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.2.2"
+  }
+}
