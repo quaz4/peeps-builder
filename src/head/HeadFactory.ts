@@ -1,3 +1,5 @@
+import { Accessory } from "./accessory/Accessory";
+import { AccessoryFactory } from "./accessory/AccessoryFactory";
 import { Cheeky } from "./face/Cheeky";
 import { Face } from "./face/Face";
 import { FaceFactory } from "./face/FaceFactory";
@@ -25,6 +27,15 @@ export class HeadFactory {
 
             if (face) {
                 head.setFace(face);
+            }
+        }
+
+        if (config.accessory) {
+            
+            let accessory: Accessory | null = AccessoryFactory.buildAccessory(config.accessory);
+
+            if (accessory) {
+                head.setAccessory(accessory);
             }
         }
 
