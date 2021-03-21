@@ -12,7 +12,8 @@ const peep: PeepConfig = {
     height: 1200,
     head: {
         hair: "Afro",
-        face: "Cheeky"
+        face: "Cheeky",
+        accessory: "Glasses"
     },
     pose: {
         
