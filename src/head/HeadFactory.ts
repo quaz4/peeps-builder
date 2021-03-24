@@ -4,6 +4,7 @@ import { Cheeky } from "./face/Cheeky";
 import { Face } from "./face/Face";
 import { FaceFactory } from "./face/FaceFactory";
 import { Hair } from "./hair/Hair";
+import { HairConfig } from "./hair/HairConfig";
 import { HairFactory } from "./hair/HairFactory";
 import { Head } from "./Head";
 import { HeadConfig } from "./HeadConfig";
@@ -14,7 +15,15 @@ export class HeadFactory {
         
         if (config.hair) {
             
-            let hair: Hair | null = HairFactory.buildHair(config.hair);
+            let hairConfig: HairConfig = { name: ""};
+
+            if (typeof config.hair === "string") {
+                hairConfig.name = config.hair;
+            } else {
+                hairConfig = config.hair;
+            }
+
+            let hair: Hair | null = HairFactory.buildHair(hairConfig);
 
             if (hair) {
                 head.setHair(hair);

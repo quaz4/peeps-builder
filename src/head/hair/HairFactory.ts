@@ -1,12 +1,12 @@
 import { Afro } from "./Afro";
 import { Hair } from "./Hair";
+import { HairConfig } from "./HairConfig";
 
 export class HairFactory {
-    static buildHair(hair: string): Hair | null {
-        switch (hair) {
+    static buildHair(config: HairConfig): Hair | null {
+        switch (config.name) {
             case "Afro":
-                return new Afro();
-                break;
+                return new Afro(config.strokeColor, config.fillColor);
         
             default:
                 return null;

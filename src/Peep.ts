@@ -6,16 +6,14 @@ import { Pose } from "./pose/Pose";
 export class Peep {
     constructor(
         private config: PeepConfig
-    ) {
-
-    }
+    ) {}
 
     build(): string {
         return (
             `<?xml version="1.0" standalone="no"?>
             <svg viewBox="${this.config.x} ${this.config.y} ${this.config.width} ${this.config.height}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g>
-                    ${HeadFactory.buildHead(this.config.head).build()}
+                    ${HeadFactory.buildHead({...this.config.head, fillColor: this.config.fillColor, strokeColor: this.config.strokeColor}).build()}
                 </g>
             </svg>`
         );

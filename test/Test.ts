@@ -11,15 +11,22 @@ const peep: PeepConfig = {
     width: 1050,
     height: 1200,
     head: {
-        hair: "Afro",
+        hair: {
+            name: "Afro",
+            fillColor: "#AA6026",
+            strokeColor: "black"
+        },
         face: "Cheeky",
-        accessory: "Glasses"
+        // accessory: "Glasses"
     },
     pose: {
         
-    }
+    },
+    fillColor: "red"
 }
 
 fs.writeFile('test/test.svg', new Peep(peep).build(), "utf8", () => {
     console.log("Written to test.svg");
+
+    console.log(peep.head);
 });

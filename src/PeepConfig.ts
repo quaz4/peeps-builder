@@ -8,4 +8,6 @@ export interface PeepConfig {
     height: number,
     head: HeadConfig;
     pose: PoseConfig;
+    strokeColor?: string;
+    fillColor?: string;
 }
