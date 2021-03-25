@@ -7,7 +7,7 @@ export interface PeepConfig {
     width: number,
     height: number,
     head: HeadConfig;
-    pose: PoseConfig;
+    pose: PoseConfig | string;
     strokeColor?: string;
     fillColor?: string;
 }

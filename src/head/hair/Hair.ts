@@ -4,7 +4,7 @@ import { Afro } from "./Afro";
 export class Hair implements Part {
     constructor(
         protected strokeColor?: string,
-        protected backgroundColor?: string
+        protected fillColor?: string
     ) {}
 
     build(): string {

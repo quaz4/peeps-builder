@@ -3,7 +3,6 @@ import { Part } from "../Part";
 
 export abstract class Pose implements Part {
     constructor(
-        protected face: Face,
         protected strokeColor?: String,
         protected backgroundColour?: String
     ) {}

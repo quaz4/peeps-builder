@@ -3,7 +3,7 @@ import { Part } from "../../Part";
 export class Accessory implements Part {
     constructor(
         protected strokeColor?: string,
-        protected backgroundColor?: string
+        protected fillColor?: string
     ) {}
 
     build(): string {

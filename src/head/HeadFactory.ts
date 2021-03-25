@@ -1,6 +1,5 @@
 import { Accessory } from "./accessory/Accessory";
 import { AccessoryFactory } from "./accessory/AccessoryFactory";
-import { Cheeky } from "./face/Cheeky";
 import { Face } from "./face/Face";
 import { FaceConfig } from "./face/FaceConfig";
 import { FaceFactory } from "./face/FaceFactory";
