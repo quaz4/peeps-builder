@@ -23,6 +23,14 @@ export class HeadFactory {
                 hairConfig = config.hair;
             }
 
+            if (!hairConfig.fillColor) {
+                hairConfig.fillColor = config.fillColor;
+            }
+
+            if (!hairConfig.strokeColor) {
+                hairConfig.strokeColor = config.strokeColor;
+            }
+
             let hair: Hair | null = HairFactory.buildHair(hairConfig);
 
             if (hair) {

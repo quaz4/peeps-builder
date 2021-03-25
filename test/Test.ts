@@ -1,9 +1,6 @@
-import { Cheeky } from "../src/head/face/Cheeky";
 import { Peep } from "../src/Peep";
 import { PeepConfig } from "../src/PeepConfig";
-import { Device } from "../src/pose/bust/Device";
 import fs from 'fs';
-// console.log(new Peep(-350, -150, 1500, 1500, new Device(new Cheeky())).build());
 
 const peep: PeepConfig = {
     x: 0,
@@ -13,8 +10,8 @@ const peep: PeepConfig = {
     head: {
         hair: {
             name: "Afro",
-            fillColor: "#AA6026",
-            strokeColor: "black"
+            fillColor: "#f0c9aa",
+            strokeColor: "orange"
         },
         face: "Cheeky",
         // accessory: "Glasses"
@@ -22,7 +19,7 @@ const peep: PeepConfig = {
     pose: {
         
     },
-    fillColor: "red"
+    strokeColor: "#A06332"
 }
 
 fs.writeFile('test/test.svg', new Peep(peep).build(), "utf8", () => {
