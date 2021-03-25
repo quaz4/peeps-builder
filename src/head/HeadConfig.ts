@@ -1,7 +1,8 @@
+import { FaceConfig } from "./face/FaceConfig";
 import { HairConfig } from "./hair/HairConfig";
 
 export interface HeadConfig {
-    face?: string;
+    face?: FaceConfig | string;
     hair?: HairConfig | string;
     facialHair?: string;
     accessory?: string;

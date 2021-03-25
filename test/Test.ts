@@ -13,13 +13,16 @@ const peep: PeepConfig = {
             fillColor: "#f0c9aa",
             strokeColor: "orange"
         },
-        face: "Cheeky",
+        face: {
+            name: "Cheeky",
+            // strokeColor: "grey"
+        },
         // accessory: "Glasses"
     },
     pose: {
         
     },
-    strokeColor: "#A06332"
+    strokeColor: "green"
 }
 
 fs.writeFile('test/test.svg', new Peep(peep).build(), "utf8", () => {

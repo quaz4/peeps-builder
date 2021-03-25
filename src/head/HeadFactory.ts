@@ -2,6 +2,7 @@ import { Accessory } from "./accessory/Accessory";
 import { AccessoryFactory } from "./accessory/AccessoryFactory";
 import { Cheeky } from "./face/Cheeky";
 import { Face } from "./face/Face";
+import { FaceConfig } from "./face/FaceConfig";
 import { FaceFactory } from "./face/FaceFactory";
 import { Hair } from "./hair/Hair";
 import { HairConfig } from "./hair/HairConfig";
@@ -40,7 +41,19 @@ export class HeadFactory {
 
         if (config.face) {
             
-            let face: Face | null = FaceFactory.buildFace(config.face);
+            let faceConfig: FaceConfig = { name: ""};
+
+            if (typeof config.face === "string") {
+                faceConfig.name = config.face;
+            } else {
+                faceConfig = config.face;
+            }
+
+            if (!faceConfig.strokeColor) {
+                faceConfig.strokeColor = config.strokeColor;
+            }
+
+            let face: Face | null = FaceFactory.buildFace(faceConfig);
 
             if (face) {
                 head.setFace(face);
