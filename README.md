@@ -14,4 +14,29 @@ npm install peeps-builder
 // TODO
 
 ## Options
-// TODO
+
+### Hair
+|Name|Color|
+|-----|-----|
+|Afro |Full |
+
+### Face
+|Name|Color|
+|-----|-----|
+|Angry|Full |
+|Cheeky|Full |
+
+### Facial Hair
+|Name|Color|
+|-----|-----|
+
+### Accessory
+|Name|Color|
+|-----|-----|
+|Glasses|Full |
+
+### Pose
+|Name|Color|
+|-----|-----|
+|BlazerBlackTee|Partial|
+|Device|Partial|
