@@ -1,5 +1,6 @@
 import { BlazerBlackTee } from "./bust/BlazerBlackTee";
 import { ButtonShirtOne } from "./bust/ButtonShirtOne";
+import { ButtonShirtTwo } from "./bust/ButtonShirtTwo";
 import { Device } from "./bust/Device";
 import { Pose } from "./Pose";
 import { PoseConfig } from "./PoseConfig";
@@ -11,6 +12,8 @@ export class PoseFactory {
                 return new BlazerBlackTee(config.strokeColor, config.fillColor);
             case "ButtonShirtOne":
                 return new ButtonShirtOne(config.strokeColor, config.fillColor);
+            case "ButtonShirtTwo":
+                return new ButtonShirtTwo(config.strokeColor, config.fillColor);
             case "Device":
                 return new Device(config.strokeColor, config.fillColor);
             default:

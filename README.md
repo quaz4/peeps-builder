@@ -40,4 +40,5 @@ npm install peeps-builder
 |-----|-----|
 |BlazerBlackTee|Partial|
 |ButtonShirtOne|Partial|
+|ButtonShirtTwo|Partial|
 |Device|Partial|
