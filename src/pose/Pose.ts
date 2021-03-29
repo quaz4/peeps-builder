@@ -4,7 +4,7 @@ import { Part } from "../Part";
 export abstract class Pose implements Part {
     constructor(
         protected strokeColor?: String,
-        protected backgroundColour?: String
+        protected backgroundColor?: String
     ) {}
 
     build(): string {
