@@ -43,3 +43,4 @@ npm install peeps-builder
 |ButtonShirtTwo|Partial|
 |Coffee|Partial|
 |Device|Partial|
+|Dress|Partial|
