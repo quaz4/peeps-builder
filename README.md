@@ -19,6 +19,7 @@ npm install peeps-builder
 |Name|Color|
 |-----|-----|
 |Afro |Full |
+|BangsOne|Partial|
 
 ### Face
 |Name|Color|
