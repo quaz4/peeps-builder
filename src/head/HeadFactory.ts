@@ -1,8 +1,12 @@
 import { Accessory } from "./accessory/Accessory";
+import { AccessoryConfig } from "./accessory/AccessoryConfig";
 import { AccessoryFactory } from "./accessory/AccessoryFactory";
 import { Face } from "./face/Face";
 import { FaceConfig } from "./face/FaceConfig";
 import { FaceFactory } from "./face/FaceFactory";
+import { FacialHair } from "./facial-hair/FacialHair";
+import { FacialHairConfig } from "./facial-hair/FacialHairConfig";
+import { FacialHairFactory } from "./facial-hair/FacialHairFactory";
 import { Hair } from "./hair/Hair";
 import { HairConfig } from "./hair/HairConfig";
 import { HairFactory } from "./hair/HairFactory";
@@ -60,11 +64,44 @@ export class HeadFactory {
         }
 
         if (config.accessory) {
-            
-            let accessory: Accessory | null = AccessoryFactory.buildAccessory(config.accessory);
+
+            let accessoryConfig: AccessoryConfig = { name: ""};
+
+            if (typeof config.accessory === "string") {
+                accessoryConfig.name = config.accessory;
+            } else {
+                accessoryConfig = config.accessory;
+            }
+
+            if (!accessoryConfig.strokeColor) {
+                accessoryConfig.strokeColor = config.strokeColor;
+            }
+
+            let accessory: Accessory | null = AccessoryFactory.buildAccessory(accessoryConfig);
 
             if (accessory) {
                 head.setAccessory(accessory);
+            }
+        }
+
+        if (config.facialHair) {
+
+            let facialHairConfig: FacialHairConfig = { name: ""};
+
+            if (typeof config.facialHair === "string") {
+                facialHairConfig.name = config.facialHair;
+            } else {
+                facialHairConfig = config.facialHair;
+            }
+
+            if (!facialHairConfig.strokeColor) {
+                facialHairConfig.strokeColor = config.strokeColor;
+            }
+
+            let facialHair: FacialHair | null = FacialHairFactory.buildFacialHair(facialHairConfig);
+
+            if (facialHair) {
+                head.setFacialHair(facialHair);
             }
         }
 
