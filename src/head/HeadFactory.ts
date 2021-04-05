@@ -27,8 +27,12 @@ export class HeadFactory {
                 hairConfig = config.hair;
             }
 
-            if (!hairConfig.fillColor) {
-                hairConfig.fillColor = config.fillColor;
+            if (!hairConfig.skinColor) {
+                hairConfig.skinColor = config.fillColor;
+            }
+
+            if (!hairConfig.hairColor) {
+                hairConfig.hairColor = config.fillColor;
             }
 
             if (!hairConfig.strokeColor) {

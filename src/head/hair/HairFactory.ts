@@ -7,9 +7,9 @@ export class HairFactory {
     static buildHair(config: HairConfig): Hair | null {
         switch (config.name) {
             case "Afro":
-                return new Afro(config.strokeColor, config.fillColor);
+                return new Afro(config.strokeColor, config.skinColor, config.hairColor);
             case "BangsOne":
-                return new BangsOne(config.strokeColor, config.fillColor);
+                return new BangsOne(config.strokeColor, config.skinColor, config.hairColor);
             default:
                 return null;
         }

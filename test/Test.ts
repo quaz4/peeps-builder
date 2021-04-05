@@ -9,9 +9,10 @@ const peep: PeepConfig = {
     height: 1200,
     head: {
         hair: {
-            name: "Afro",
-            fillColor: "#f0c9aa",
-            strokeColor: "orange"
+            name: "BangsOne",
+            hairColor: "#f0c9aa",
+            strokeColor: "black",
+            skinColor: "#FFDBB4"
         },
         face: {
             name: "Cheeky",
@@ -20,7 +21,7 @@ const peep: PeepConfig = {
     },
     pose: "Device",
     strokeColor: "black",
-    fillColor: "yellow"
+    fillColor: "#FFDBB4"
 }
 
 fs.writeFile('test/test.svg', new Peep(peep).build(), "utf8", () => {

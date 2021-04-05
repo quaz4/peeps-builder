@@ -1,5 +1,6 @@
 export interface HairConfig {
     name: string;
-    fillColor?: string;
+    skinColor?: string;
+    hairColor?: string;
     strokeColor?: string;
 }
