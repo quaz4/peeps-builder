@@ -36,6 +36,11 @@ npm install peeps-builder
 |-----|-----|
 |Glasses|Full |
 
+### Mask
+|Name|Color|
+|----------|-----|
+|Respirator|Full |
+
 ### Pose
 |Name|Color|
 |-----|-----|
