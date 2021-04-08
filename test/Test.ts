@@ -17,7 +17,12 @@ const peep: PeepConfig = {
         face: {
             name: "Cheeky",
         },
-        accessory: "Glasses"
+        accessory: "Glasses",
+        mask: {
+            name: "Respirator",
+            fillColor: "lightblue",
+            strokeColor: "grey"
+        }
     },
     pose: "Device",
     strokeColor: "black",
@@ -26,6 +31,4 @@ const peep: PeepConfig = {
 
 fs.writeFile('test/test.svg', new Peep(peep).build(), "utf8", () => {
     console.log("Written to test.svg");
-
-    console.log(peep.head);
 });

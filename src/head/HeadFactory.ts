@@ -12,6 +12,9 @@ import { HairConfig } from "./hair/HairConfig";
 import { HairFactory } from "./hair/HairFactory";
 import { Head } from "./Head";
 import { HeadConfig } from "./HeadConfig";
+import { Mask } from "./mask/Mask";
+import { MaskConfig } from "./mask/MaskConfig";
+import { MaskFactory } from "./mask/MaskFactory";
 
 export class HeadFactory {
     static buildHead(config: HeadConfig): Head {
@@ -85,6 +88,27 @@ export class HeadFactory {
 
             if (accessory) {
                 head.setAccessory(accessory);
+            }
+        }
+
+        if (config.mask) {
+
+            let maskConfig: MaskConfig = { name: ""};
+
+            if (typeof config.mask === "string") {
+                maskConfig.name = config.mask;
+            } else {
+                maskConfig = config.mask;
+            }
+
+            if (!maskConfig.strokeColor) {
+                maskConfig.strokeColor = config.strokeColor;
+            }
+
+            let mask: Mask | null = MaskFactory.buildMask(maskConfig);
+
+            if (mask) {
+                head.setMask(mask);
             }
         }
 

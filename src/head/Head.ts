@@ -3,12 +3,14 @@ import { Part } from "../Part";
 import { FacialHair } from "./facial-hair/FacialHair";
 import { Hair } from "./hair/Hair";
 import { Accessory } from "./accessory/Accessory";
+import { Mask } from "./mask/Mask";
 
 export class Head implements Part {
     constructor(
         private face?: Face,
         private facialHair?: FacialHair,
         private hair?: Hair,
+        private mask?: Mask,
         private accessory?: Accessory
     ) {}
 
@@ -22,6 +24,10 @@ export class Head implements Part {
 
     setHair(hair: Hair) {
         this.hair = hair;
+    }
+
+    setMask(mask: Mask) {
+        this.mask = mask;
     }
 
     setAccessory(accessory: Accessory) {
@@ -38,6 +44,9 @@ export class Head implements Part {
                     ${this.face && this.face.build()}
                 </g>
                 <g transform='translate(123 338)'>
+                    ${this.mask && this.mask.build()}
+                </g>
+                <g transform='translate(123 338)'>
                     ${this.facialHair && this.facialHair.build()}
                 </g>
                 <g transform='translate(47 241)'>
@@ -45,25 +54,5 @@ export class Head implements Part {
                 </g>
             </g>
         `);
-
-        // let head: string = ``;
-        
-        // if (this.face) {
-        //     head += this.face.build();
-        // }
-
-        // if (this.facialHair) {
-        //     head += this.facialHair.build();
-        // }
-
-        // if (this.hair) {
-        //     head += this.hair.build();
-        // }
-
-        // if (this.accessory) {
-        //     head += this.accessory.build();
-        // }
-
-        // return head;
     }
 }
