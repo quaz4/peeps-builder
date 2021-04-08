@@ -1,5 +1,4 @@
 import { Part } from "../../Part"
-import { Afro } from "./Afro";
 
 export class Hair implements Part {
     constructor(
