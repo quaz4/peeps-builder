@@ -30,6 +30,7 @@ npm install peeps-builder
 ### Facial Hair
 |Name|Color|
 |-----|-----|
+|Full|Full|
 
 ### Accessory
 |Name|Color|
