@@ -42,6 +42,10 @@ export class HeadFactory {
                 hairConfig.strokeColor = config.strokeColor;
             }
 
+            if (!hairConfig.accentColor) {
+                hairConfig.accentColor = config.accentColor;
+            }
+
             let hair: Hair | null = HairFactory.buildHair(hairConfig);
 
             if (hair) {

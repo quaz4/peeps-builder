@@ -4,7 +4,8 @@ export class Hair implements Part {
     constructor(
         protected strokeColor?: string,
         protected skinColor?: string,
-        protected hairColor?: string
+        protected hairColor?: string,
+        protected accentColor?: string
     ) {}
 
     build(): string {

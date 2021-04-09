@@ -13,4 +13,5 @@ export interface HeadConfig {
     strokeColor?: string;
     fillColor?: string;
     skinColor?: string;
+    accentColor?: string;
 }

@@ -3,4 +3,5 @@ export interface HairConfig {
     skinColor?: string;
     hairColor?: string;
     strokeColor?: string;
+    accentColor?: string;
 }
