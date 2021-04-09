@@ -27,12 +27,20 @@ export class Peep {
             poseConfig.strokeColor = this.config.strokeColor;
         }
 
+        if (!poseConfig.skinColor) {
+            poseConfig.skinColor = this.config.skinColor;
+        }
+
+        if (!poseConfig.accentColor) {
+            poseConfig.accentColor = this.config.accentColor;
+        }
+
         return (
             `<?xml version="1.0" standalone="no"?>
             <svg viewBox="${this.config.x} ${this.config.y} ${this.config.width} ${this.config.height}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g>
                     ${PoseFactory.buildPose(poseConfig)?.build()}
-                    ${HeadFactory.buildHead({...this.config.head, fillColor: this.config.fillColor, strokeColor: this.config.strokeColor}).build()}
+                    ${HeadFactory.buildHead({...this.config.head, fillColor: this.config.fillColor, strokeColor: this.config.strokeColor, skinColor: this.config.skinColor}).build()}
                 </g>
             </svg>`
         );

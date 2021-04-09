@@ -12,4 +12,5 @@ export interface HeadConfig {
     mask?: MaskConfig | string;
     strokeColor?: string;
     fillColor?: string;
+    skinColor?: string;
 }

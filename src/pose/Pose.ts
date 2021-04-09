@@ -3,8 +3,10 @@ import { Part } from "../Part";
 
 export abstract class Pose implements Part {
     constructor(
-        protected strokeColor?: String,
-        protected backgroundColor?: String
+        protected strokeColor?: string,
+        protected skinColor?: string,
+        protected fillColor?: string,
+        protected accentColor?: string
     ) {}
 
     build(): string {

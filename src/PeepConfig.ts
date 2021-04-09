@@ -10,4 +10,6 @@ export interface PeepConfig {
     pose: PoseConfig | string;
     strokeColor?: string;
     fillColor?: string;
+    skinColor?: string;
+    accentColor?: string;
 }
