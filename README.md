@@ -16,10 +16,11 @@ npm install peeps-builder
 ## Options
 
 ### Hair
-|Name|Color|
-|-----|-----|
-|Afro |Full |
-|BangsOne|Full|
+|Name|skinColor|strokeColor|hairColor|accentColor|
+|-----|-----|-----|-----|-----|
+|Afro |Yes|Yes|No|No|No|
+|BangsOne|Yes|Yes|Yes|No|
+|Beanie|Yes|Yes|No|Yes|
 
 ### Face
 |Name|Color|
