@@ -5,6 +5,7 @@ import { Coffee } from "./bust/Coffee";
 import { Device } from "./bust/Device";
 import { Dress } from "./bust/Dress";
 import { SelinaTee } from "./bust/SelenaTee";
+import { ShirtAndCoat } from "./bust/ShirtAndCoat";
 import { Pose } from "./Pose";
 import { PoseConfig } from "./PoseConfig";
 
@@ -25,6 +26,8 @@ export class PoseFactory {
                 return new Dress(config.strokeColor, config.fillColor);
             case "SelenaTee":
                 return new SelinaTee(config.strokeColor, config.skinColor, config.fillColor, config.accentColor);
+            case "ShirtAndCoat":
+                return new ShirtAndCoat(config.strokeColor, config.skinColor, config.fillColor, config.accentColor);
             default:
                 return null;
         }

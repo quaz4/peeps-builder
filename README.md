@@ -45,11 +45,13 @@ npm install peeps-builder
 |Respirator|Yes|Yes|
 
 ### Pose
-|Name|Color|
-|-----|-----|
-|BlazerBlackTee|Partial|
-|ButtonShirtOne|Partial|
-|ButtonShirtTwo|Partial|
-|Coffee|Partial|
-|Device|Partial|
-|Dress|Partial|
+|Name|skinColor|strokeColor|fillColor|accentColor|
+|-----|-----|-----|-----|-----|
+|BlazerBlackTee|No|Yes|Yes|No|
+|ButtonShirtOne|No|Yes|Yes|No|
+|ButtonShirtTwo|No|Yes|Yes|No|
+|Coffee|No|Yes|Yes|No|
+|Device|No|Yes|Yes|No|
+|Dress|No|Yes|Yes|No|
+|SelenaTee|Yes|Yes|No|No|
+|ShirtAndCoat|Yes|Yes|Yes|Yes|
