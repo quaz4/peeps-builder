@@ -3,6 +3,7 @@ import { BangsOne } from "./BangsOne";
 import { Beanie } from "./Beanie";
 import { Hair } from "./Hair";
 import { HairConfig } from "./HairConfig";
+import { NoHair } from "./NoHair";
 
 export class HairFactory {
     static buildHair(config: HairConfig): Hair | null {
@@ -13,6 +14,8 @@ export class HairFactory {
                 return new BangsOne(config.strokeColor, config.skinColor, config.hairColor);
             case "Beanie":
                 return new Beanie(config.strokeColor, config.skinColor, config.hairColor, config.accentColor);
+            case "NoHair":
+                return new NoHair(config.strokeColor, config.skinColor, config.hairColor, config.accentColor);
             default:
                 return null;
         }

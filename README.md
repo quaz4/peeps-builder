@@ -21,6 +21,7 @@ npm install peeps-builder
 |Afro |Yes|Yes|No|No|No|
 |BangsOne|Yes|Yes|Yes|No|
 |Beanie|Yes|Yes|No|Yes|
+|NoHair|Yes|Yes|No|No|
 
 ### Face
 |Name|Color|
