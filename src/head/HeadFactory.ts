@@ -67,6 +67,11 @@ export class HeadFactory {
                 faceConfig.strokeColor = config.strokeColor;
             }
 
+            if (!faceConfig.eyeColor) {
+                faceConfig.eyeColor = config.strokeColor;
+            }
+
+
             let face: Face | null = FaceFactory.buildFace(faceConfig);
 
             if (face) {

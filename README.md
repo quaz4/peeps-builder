@@ -24,10 +24,11 @@ npm install peeps-builder
 |NoHair|Yes|Yes|No|No|
 
 ### Face
-|Name|Color|
-|-----|-----|
-|Angry|Full |
-|Cheeky|Full |
+|Name|strokeColor|eyeColor|
+|-----|-----|-----|
+|Angry|Yes|No|
+|Awe|Yes|Yes|
+|Cheeky|Yes|No|
 
 ### Facial Hair
 |Name|Color|
