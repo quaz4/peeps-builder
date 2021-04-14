@@ -19,7 +19,7 @@ export class PoseFactory {
             case "ButtonShirtTwo":
                 return new ButtonShirtTwo(config.strokeColor, config.fillColor);
             case "Coffee":
-                return new Coffee(config.strokeColor, config.fillColor);
+                return new Coffee(config.strokeColor, config.skinColor, config.fillColor, config.accentColor);
             case "Device":
                 return new Device(config.strokeColor, config.fillColor);
             case "Dress":

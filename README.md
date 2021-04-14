@@ -52,7 +52,7 @@ npm install peeps-builder
 |BlazerBlackTee|No|Yes|Yes|No|
 |ButtonShirtOne|No|Yes|Yes|No|
 |ButtonShirtTwo|No|Yes|Yes|No|
-|Coffee|No|Yes|Yes|No|
+|Coffee|Yes|Yes|Yes|Yes|
 |Device|No|Yes|Yes|No|
 |Dress|No|Yes|Yes|No|
 |SelenaTee|Yes|Yes|No|No|
