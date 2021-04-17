@@ -38,9 +38,10 @@ npm install peeps-builder
 |Full|Full|
 
 ### Accessory
-|Name|Color|
+|Name|strokeColor|
 |-----|-----|
-|Glasses|Full |
+|Glasses|Yes|
+|GlassesTwo|Yes|
 
 ### Mask
 |Name|strokeColor|fillColor|
