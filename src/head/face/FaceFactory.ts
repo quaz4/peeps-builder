@@ -11,7 +11,7 @@ export class FaceFactory {
             case "Angry":
                 return new Angry(config.strokeColor);
             case "Awe":
-                return new Awe(config.strokeColor, config.eyeColor);
+                return new Awe(config.strokeColor, config.accentColor);
             case "Cheeky":
                 return new Cheeky(config.strokeColor);
             case "Smile":

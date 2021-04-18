@@ -67,8 +67,8 @@ export class HeadFactory {
                 faceConfig.strokeColor = config.strokeColor;
             }
 
-            if (!faceConfig.eyeColor) {
-                faceConfig.eyeColor = config.strokeColor;
+            if (!faceConfig.accentColor) {
+                faceConfig.accentColor = config.strokeColor;
             }
 
 
