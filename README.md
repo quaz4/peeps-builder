@@ -53,7 +53,7 @@ npm install peeps-builder
 |Name|skinColor|strokeColor|fillColor|accentColor|
 |-----|-----|-----|-----|-----|
 |BlazerBlackTee|No|Yes|Yes|No|
-|ButtonShirtOne|No|Yes|Yes|No|
+|ButtonShirtOne|Yes|Yes|Yes|No|
 |ButtonShirtTwo|No|Yes|Yes|No|
 |Coffee|Yes|Yes|Yes|Yes|
 |Device|No|Yes|Yes|No|
