@@ -4,6 +4,7 @@ import { Beanie } from "./Beanie";
 import { Bun } from "./Bun";
 import { Hair } from "./Hair";
 import { HairConfig } from "./HairConfig";
+import { MediumThree } from "./MediumThree";
 import { NoHair } from "./NoHair";
 
 export class HairFactory {
@@ -17,6 +18,8 @@ export class HairFactory {
                 return new Beanie(config.strokeColor, config.skinColor, config.hairColor, config.accentColor);
             case "Bun":
                 return new Bun(config.strokeColor, config.skinColor, config.hairColor);
+            case "MediumThree":
+                return new MediumThree(config.strokeColor, config.skinColor);
             case "NoHair":
                 return new NoHair(config.strokeColor, config.skinColor, config.hairColor, config.accentColor);
             default:
