@@ -1,11 +1,15 @@
 # Peeps Builder
 
+![Image generated with peeps builder](https://raw.githubusercontent.com/quaz4/peeps-builder/main/test/test.svg)
+
 Peeps Builder is a Typescript library for building svgs using Pablo Stanley's [Open Peeps](https://www.openpeeps.com/) project.
 
 Parts of this library are based on [react-peeps](https://github.com/CeamKrier/react-peeps) by CreamKrier.
 
+This library doesn't include every part, I'll be adding them if/when I get time. PRs welcome.
+
 ## Installation
-In future will be available on `npm` with
+Available from `npm` with
 ``` bash
 npm install peeps-builder
 ```
