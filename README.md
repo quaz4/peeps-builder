@@ -11,10 +11,49 @@ npm install peeps-builder
 ```
 
 ## Usage
-// TODO
+``` Typescript
+import { Peep } from "../src/Peep";
+import { PeepConfig } from "../src/PeepConfig";
+import fs from 'fs';
+
+const peep: PeepConfig = {
+    x: 0,
+    y: 0,
+    width: 1050,
+    height: 1200,
+    head: {
+        hair: {
+            name: "MediumThree",
+            strokeColor: "#D698FF",
+        },
+        face: {
+            name: "Cheeky"
+        },
+        accessory: "Glasses",
+        mask: {
+            name: "None",
+            fillColor: "lightblue",
+            strokeColor: "grey"
+        }
+    },
+    pose: {
+        name: "ButtonShirtOne",
+        fillColor: "grey",
+        accentColor: "white",
+        strokeColor: "black"
+    },
+    strokeColor: "black",
+    fillColor: "#FFDBB4",
+    accentColor: "white",
+    skinColor: "#FFDBB4"
+}
+
+fs.writeFile('test/test.svg', new Peep(peep).build(), "utf8", () => {
+    console.log("Written to test.svg");
+});
+```
 
 ## Options
-
 ### Hair
 |Name|skinColor|strokeColor|hairColor|accentColor|
 |-----|-----|-----|-----|-----|
